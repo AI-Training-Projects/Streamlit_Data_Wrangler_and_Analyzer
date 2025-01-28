@@ -1,0 +1,7 @@
+
+################################################################################################
+
+
+2025-01-27 20:36:16.886 Serialization of dataframe to Arrow table was unsuccessful due to: ("Expected bytes, got a 'datetime.datetime' object", 'Conversion failed for column Closed with type object'). Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+2025-01-27 20:36:16.901 Serialization of dataframe to Arrow table was unsuccessful due to: ("Could not convert dtype('int64') with type numpy.dtypes.Int64DType: did not recognize Python value type when inferring an Arrow data type", 'Conversion failed for column Column_Datatype with type object'). Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+
