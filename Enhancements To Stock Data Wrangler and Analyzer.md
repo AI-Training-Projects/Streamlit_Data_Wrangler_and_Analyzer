@@ -1,5 +1,8 @@
 # Enhancements To Stock Data Wrangler and Analyzer: 
 
+TODO: Move the "Prepare Data" into a separate page in the Streamlit Sidebar. 
+TODO: Add the "Analyze Data" into its own page in the Streamlit Sidebar. 
+
 TODO: Change dropdown menus for selecting datatypes to an interactive iTables grid with "in-place menus". 
 
 TODO: Make all grid displays the "full" width.  
