@@ -1,0 +1,9 @@
+Python Data Science Handbook: full text in Jupyter Notebooks: jakevdp/PythonDataScienceHandbook
+    https://github.com/jakevdp/PythonDataScienceHandbook/tree/master?tab=readme-ov-file
+
+Python Data Science Handbook
+    https://jakevdp.github.io/PythonDataScienceHandbook/
+
+A very interesting thing about this book is the relatively simple Python utilties that Jake Vanderplas used to create this publication and website directly from Jupyter Notebooks.  
+
+The PDF and final paper published edition was created directly from the Juptyer Notebook content almost verbatim, except for the Table of Content and other publication house front matter.

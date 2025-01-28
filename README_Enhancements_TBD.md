@@ -1,16 +1,23 @@
 # Enhancements To Stock Data Wrangler and Analyzer: 
 
-TODO: Move the "Prepare Data" into a separate page in the Streamlit Sidebar. 
-TODO: Add the "Analyze Data" into its own page in the Streamlit Sidebar. 
+
+1) TODO: Let the user Sort the dataframe immediately after importing it the first time.  Save it with the sorted configuration.  
+
+2) TODO: Make all grid displays the "full" width.  
+
+3) TODO: Improve file handling to store processed files and logfiles outside "Project Main" folder.
+    a) Modify the program to store run "logfiles" in the "Logfiles" folder.
+    b) Modify the program to store run "cleaned_datasets" in the "Logfiles" folder.
+
+
+3) TODO: Make separate workflow pages in a Streamlit Sidebar Navigator
+    Move the "Prepare Data" into a separate page in the Streamlit Sidebar. 
+    Add the "Analyze Data" into its own page in the Streamlit Sidebar. 
+
 
 TODO: Change dropdown menus for selecting datatypes to an interactive iTables grid with "in-place menus". 
 
-TODO: Make all grid displays the "full" width.  
-
-TODO: Let the user Sort the dataframe immediately after importing it the first time.  Save it with the sorted configuration.  
-
-TODO: Modify the program to store run "logfiles" in the "Logfiles" folder.
-TODO: Modify the program to store run "cleaned_datasets" in the "Logfiles" folder.
+TODO: Cache all datagrids after they are loaded and displayed, i.e., no screen refresh when events fire.
 
 TODO: Use "best practices" approach stated in this notebook (Making_Streamlit_Pandas_iTables_and_PyArrow_Play_Nicely_Together.ipynb) to make pandas, iTables, and streamlit work together better.  
     

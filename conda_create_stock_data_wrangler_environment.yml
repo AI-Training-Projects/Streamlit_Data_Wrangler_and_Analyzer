@@ -1,0 +1,8 @@
+# Create conda runtime environment 
+conda create --name stock_data_wrangler --channel conda-forge python=3.12 pip conda
+
+# Activate environment
+activate  stock_data_wrangler
+
+# Install application packages 
+conda install --channel conda-forge streamlit pandas plotly numpy itables nest_asyncio pyarrow
