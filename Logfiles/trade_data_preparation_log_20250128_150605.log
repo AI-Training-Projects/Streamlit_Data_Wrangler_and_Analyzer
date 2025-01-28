@@ -1,0 +1,34 @@
+2025-01-28 15:06:28,165 - INFO - Converted column Trade to int64
+2025-01-28 15:06:28,169 - INFO - Converted column Opened to datetime64
+2025-01-28 15:06:28,171 - INFO - Converted column Closed to datetime64
+2025-01-28 15:06:28,172 - INFO - Converted column DIT to int64
+2025-01-28 15:06:28,175 - INFO - Converted column Description to object
+2025-01-28 15:06:28,177 - INFO - Converted column Symbol to object
+2025-01-28 15:06:28,179 - INFO - Converted column Planned_Capital to int64
+2025-01-28 15:06:28,180 - INFO - Converted column Maximum_Margin to int64
+2025-01-28 15:06:28,182 - INFO - Converted column Current_Margin to float64
+2025-01-28 15:06:28,184 - INFO - Converted column Profit_Loss to float64
+2025-01-28 15:06:28,185 - INFO - Converted column Yield_on_Max_Margin to float64
+2025-01-28 15:06:28,186 - INFO - Converted column Yield_on_Planned_Capital to float64
+2025-01-28 15:06:28,190 - INFO - Converted column Short_Strike_Delta to float64
+2025-01-28 15:06:28,192 - INFO - Converted column Position_Delta to float64
+2025-01-28 15:06:28,193 - INFO - Converted column Updated_Eastern to object
+2025-01-28 15:06:28,194 - INFO - Converted column View_Details to float64
+2025-01-28 15:06:43,926 - INFO - Converted column Trade to int64
+2025-01-28 15:06:43,929 - INFO - Converted column Opened to datetime64
+2025-01-28 15:06:43,931 - INFO - Converted column Closed to datetime64
+2025-01-28 15:06:43,932 - INFO - Converted column DIT to int64
+2025-01-28 15:06:43,934 - INFO - Converted column Description to object
+2025-01-28 15:06:43,934 - INFO - Converted column Symbol to object
+2025-01-28 15:06:43,936 - INFO - Converted column Planned_Capital to int64
+2025-01-28 15:06:43,938 - INFO - Converted column Maximum_Margin to int64
+2025-01-28 15:06:43,940 - INFO - Converted column Current_Margin to float64
+2025-01-28 15:06:43,942 - INFO - Converted column Profit_Loss to float64
+2025-01-28 15:06:43,943 - INFO - Converted column Yield_on_Max_Margin to float64
+2025-01-28 15:06:43,945 - INFO - Converted column Yield_on_Planned_Capital to float64
+2025-01-28 15:06:43,947 - INFO - Converted column Short_Strike_Delta to float64
+2025-01-28 15:06:43,949 - INFO - Converted column Position_Delta to float64
+2025-01-28 15:06:43,950 - INFO - Converted column Updated_Eastern to object
+2025-01-28 15:06:43,952 - INFO - Converted column View_Details to float64
+2025-01-28 15:06:43,980 - INFO - Successfully saved sorted dataset to trade_performance_dataset_cleaned_20250128_150643.csv
+2025-01-28 15:06:44,179 - INFO - Successfully saved cleaned dataset to trade_performance_dataset_cleaned_20250128_150643.csv and trade_performance_dataset_cleaned_20250128_150643.xlsx

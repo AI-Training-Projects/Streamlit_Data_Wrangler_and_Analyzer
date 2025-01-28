@@ -6,3 +6,4 @@ activate  stock_data_wrangler
 
 # Install application packages 
 conda install --channel conda-forge streamlit pandas plotly numpy itables nest_asyncio pyarrow
+

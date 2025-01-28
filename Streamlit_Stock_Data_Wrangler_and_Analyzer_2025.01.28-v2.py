@@ -152,32 +152,39 @@ def main():
         st.stop()
 
     # Read the file
-        @st.cache_data
+    @st.cache_data
     def read_file(file):
         try:
             if file.name.endswith('.xlsx'):
-                initial_df = pd.read_excel(file)
-                return initial_df
+                return pd.read_excel(file)
             else:
-                initial_df = pd.read_csv(file)
-                return initial_df
+                return pd.read_csv(file)
         except Exception as e:
             st.error(f"Error reading file: {str(e)}")
             return None
 
+    df = read_file(file)
+    if df is None:
+        return
+
+    # Clean column names
+    @st.cache_data
+    def clean_columns(df):
+        return clean_column_names(df)
+
+    df = clean_columns(df)
 
     # Display initial data inspection
-    display_initial_inspection(initial_df)
+    display_initial_inspection(df)
 
     # Display column headers and datatypes
-    display_column_headers(initial_df)
+    display_column_headers(df)
 
-
-    # Create datatype selection options for cleaning
+    # Create datatype selection options
     datatype_options = {col: create_datatype_options(str(dtype)) for col, dtype in df.dtypes.items()}
 
     # Create interactive grid for datatype selection
-    with st.expander("Select Datatypes Below if They Need to Be Changed:"):
+    with st.expander("Select Datatypes"):
         datatype_map = {}
         for col, options in datatype_options.items():
             current_type = str(df[col].dtype)
@@ -185,13 +192,14 @@ def main():
                 current_type = 'datetime64'
             datatype_map[col] = st.selectbox(f"Select datatype for {col}", options, index=options.index(current_type))
 
-
-    # # Clean column names
-    # df = clean_column_names(df)
-
     # Preview data after datatype conversion
     if st.button("Preview Data After Datatype Conversion"):
-        df_preview = convert_datatypes(df.copy(), datatype_map)
+        @st.cache_data
+        def convert_and_preview(df, datatype_map):
+            df_converted = convert_datatypes(df.copy(), datatype_map)
+            return df_converted
+
+        df_preview = convert_and_preview(df, datatype_map)
         sorted_df = preview_data(df_preview, datatype_map)
 
         # Save sorted dataset
